@@ -58,12 +58,13 @@
   .content-tile {
     /* order: 1; */
     flex-basis: 50%;
-    max-width: 400px;
+    max-width: 600px;
+    margin-right: 100px;
   }
   .video-tile {
     /* order: 0; */
     flex-basis: 50%;
-    max-width: 400px;
+    max-width: 600px;
   }
 
 }
