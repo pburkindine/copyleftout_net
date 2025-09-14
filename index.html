@@ -111,24 +111,6 @@ div#qTip {
  z-index: 1000;
  border-radius: 5px;
 }
-
-.easter-egg {
-  animation: subtle-pulse 3s ease-in-out infinite;
-}
-
-@keyframes subtle-pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(255, 107, 107, 0);
-  }
-}
-
-.easter-egg:hover {
-  animation: none;
-  box-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
-}
 </style>
 <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
 </head>
@@ -261,9 +243,8 @@ Well, no, robots are cool.  It's just, we're automating ourselves out of busines
 <br/><br/><br/><br/>
 
 
-<a href="http://www.froodley.com/" target="_blank" class="qtip easter-egg" title="GROMPH !! Click me! 🎯" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" style="display: inline-block; transition: transform 0.2s ease; cursor: pointer;">
-  <img src="http://www.froodley.com/gromph.jpg" width="280px" border="0" style="border: 2px dashed #ff6b6b; border-radius: 10px; opacity: 0.9;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'"/>
-  <div style="font-size: 12px; color: #666; margin-top: 5px; font-style: italic;">✨ Easter Egg ✨</div>
+<a href="http://www.froodley.com/" target="_blank" class="qtip" title="GROMPH !!" style="display: inline-block; transition: opacity 0.3s ease; cursor: pointer;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+  <img src="http://www.froodley.com/gromph.jpg" width="280px" border="0" style="border-radius: 5px;"/>
 </a>
 <!--
 who are you, are you in politics, are you in sales, are you a Christian, are you a dad, tell me your own personal phone number such as...<br/>
