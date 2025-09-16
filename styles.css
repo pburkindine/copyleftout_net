@@ -47,7 +47,7 @@ video {
 /* Desktop Video Sizing */
 @media screen and (min-width: 768px) {
   video {
-    max-width: 640px;
+    max-width: 800px;
   }
 }
 
@@ -210,6 +210,17 @@ img[src*="gromph.jpg"] {
   max-width: 280px;
   height: auto;
   display: block;
+  margin: 20px auto;
+}
+
+/* Gromph Section with HRs */
+.gromph-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.gromph-section hr {
+  width: 20%;
   margin: 20px auto;
 }
 
