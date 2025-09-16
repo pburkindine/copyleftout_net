@@ -44,6 +44,13 @@ video {
   margin: 20px auto;
 }
 
+/* Desktop Video Sizing */
+@media screen and (min-width: 768px) {
+  video {
+    max-width: 640px;
+  }
+}
+
 /* Flexbox Layout */
 .flexo {
   display: flex;
@@ -196,6 +203,14 @@ a:hover {
 img[src="fb.png"] {
   max-width: 100px;
   height: auto;
+}
+
+/* Gromph Image */
+img[src*="gromph.jpg"] {
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 /* Legacy Support */
