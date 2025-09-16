@@ -80,7 +80,7 @@ hr {
   height: 1px;
   background: #ddd;
   margin: 20px auto;
-  width: 80%;
+  width: 30%;
 }
 
 /* Links */
@@ -190,6 +190,12 @@ a:hover {
   .content-tile video, .video-tile video {
     max-width: 500px;
   }
+}
+
+/* Facebook Button */
+img[src="fb.png"] {
+  max-width: 50px;
+  height: auto;
 }
 
 /* Legacy Support */
