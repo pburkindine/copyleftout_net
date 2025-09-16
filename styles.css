@@ -1,5 +1,198 @@
 
+/* Mobile-First Responsive Design for Copyleftout.net */
 
+/* Base Mobile Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Comic Sans MS, sans-serif;
+  line-height: 155%;
+  letter-spacing: .1em;
+  background: white;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Images - Mobile First */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Videos - Mobile First */
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Flexbox Layout */
+.flexo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.content-tile, .video-tile {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Lists */
+ul {
+  text-align: left;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Center Alignment */
+center {
+  text-align: center;
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #004499;
+}
+
+/* Special Elements */
+.qtip {
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.qtip:hover {
+  opacity: 0.8;
+}
+
+/* Main Content Areas */
+.main-content {
+  padding: 20px 15px;
+}
+
+/* Section Headers */
+.section-header {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+/* Peace Cross Specific */
+.peace_cross {
+  max-height: 200px;
+  width: auto;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .main-content {
+    padding: 30px;
+  }
+
+  .flexo {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 40px;
+  }
+
+  .content-tile, .video-tile {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  /* Desktop Image Constraints */
+  .content-tile img, .video-tile img {
+    max-width: 300px;
+  }
+
+  .content-tile video, .video-tile video {
+    max-width: 400px;
+  }
+
+  /* Desktop Typography */
+  .section-header {
+    font-size: 1.8rem;
+  }
+
+  hr {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 50px;
+  }
+
+  .main-content {
+    padding: 50px;
+  }
+
+  .flexo {
+    max-width: 1400px;
+    gap: 60px;
+  }
+
+  .content-tile, .video-tile {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  /* Larger Desktop Images */
+  .content-tile img, .video-tile img {
+    max-width: 400px;
+  }
+
+  .content-tile video, .video-tile video {
+    max-width: 500px;
+  }
+}
+
+/* Legacy Support */
 #main {
   z-index: 1;
 }
@@ -8,70 +201,7 @@
   border-left: 1px dotted black;
   display: flex;
   align-items: flex-end;
-  /* height: 0; */
   overflow-y: visible;
   width: 100%;
   z-index: 0;
-}
-
-.peace_cross {
-  max-height: 11rem;
-}
-
-
-.flexo {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content-tile {
-  flex-basis: 100%;
-  margin-bottom: 30px;
-  order: 0;
-  padding: 10px;
-/* border: 1px solid red; */
-}
-
-.video-tile {
-  flex-basis: 100%;
-  margin-bottom: 30px;
-  order: 1;
-  padding: 10px;
-}
-
-.section-header {
-  font-size: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .main {
-    padding: 30px;
-  }
-
-  .flexo {
-    flex-direction: row;
-    max-width: 1200px;
-  }
-
-  .content-tile {
-    /* order: 1; */
-    flex-basis: 50%;
-    max-width: 600px;
-    margin-right: 100px;
-  }
-  .video-tile {
-    /* order: 0; */
-    flex-basis: 50%;
-    max-width: 600px;
-  }
-
-}
-
-
-@media screen and (min-width: 1200px) {
-  .main {
-    padding: 50px;
-  }
 }
